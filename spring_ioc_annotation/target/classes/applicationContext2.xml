@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--引入context命名空间-->
+
+    <context:annotation-config></context:annotation-config> <!--XML与注解整合需要引入的标签，禁止了使用类注解-->
+    <!--XML配置管理类，而注解管理属性注解-->
+
+    <bean id="productDao" class="cn.hzebin.demo3.ProductDao"></bean>
+    <bean id="categoryDao" class="cn.hzebin.demo3.CategoryDao"></bean>
+    <bean id="productService" class="cn.hzebin.demo3.ProductService"></bean>
+</beans>

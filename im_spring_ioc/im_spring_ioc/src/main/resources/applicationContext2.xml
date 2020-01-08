@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--Spring的属性注入=======================================================-->
+    <!--p名称空间属性注入，代码的第3行需要增加为p ！！！-->
+    <bean id="cat" class="cn.hzebin.ioc.demo4.Cat" p:name="小猫"></bean>
+    <bean id="person" class="cn.hzebin.ioc.demo4.Person" p:name="胡文瀚" p:age="23" p:cat-ref="cat"></bean>
+</beans>
